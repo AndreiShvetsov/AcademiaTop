@@ -1,0 +1,29 @@
+article {font-family: Verdana, Geneva, Tahoma, sans-serif; width: 90%; margin: auto;}
+.fut ul {list-style: url(markers/football.png); font-family: Arial, sans-serif; font-weight: bold;}
+.b1 ul {font-weight: normal;}
+#pol {list-style: url(markers/flags/poland.png);}
+#rus {list-style: url(markers/flags/russia.png);}
+#hex {list-style: url(markers/flags/czech.png);}
+#grec {list-style: url(markers/flags/greece.png);}
+#german {list-style: url(markers/flags/germany.png);}
+#nider {list-style: url(markers/flags/netherlands.png);}
+#portu {list-style: url(markers/flags/portugal.png);}
+#dan {list-style: url(markers/flags/denmark.png);}
+#ispan {list-style: url(markers/flags/spain.png);}
+#ital {list-style: url(markers/flags/italy.png);}
+#horv {list-style: url(markers/flags/croatia.png);}
+#irl {list-style: url(markers/flags/ireland.png);}
+#ykr {list-style: url(markers/flags/ukraine.png);}
+#engl {list-style: url(markers/flags/england.png);}
+#fran {list-style: url(markers/flags/france.png);}
+#shvet {list-style: url(markers/flags/sweden.png);}
+
+header {text-align: center;}
+ol {color: green; padding-left: 105px;}
+ul {list-style-type: circle; color: black;}
+.b2 {font-family: Arial, sans-serif; font-weight: bold;}
+.red {color: red;}
+
+.strel {list-style: url(markers/arrow.gif); padding-left: 100px;}
+.hw3 ul {list-style-type: disc; color: black; margin: 0 -40px;}
+.hw3 ol {color: black;}

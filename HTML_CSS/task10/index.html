@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="index.css">
+    <title>HW_form</title>
+</head>
+<body>
+    <a href="/index.html">Вернуться в главное меню</a>
+    <section>
+        <div class="card">
+            <div class="card__text">
+                <p class="card_text_p">CREDIT CARD DETAILS</p>
+            </div>
+            <div class="card__number">
+                <label for="card__input_number">Card Number</label>
+                <input type="number" id="card__input_number" min="0000000000000000" max="9999999999999999" step="1" placeholder="1234 5678 9012 3456">
+            </div>
+            <div class="card__name">
+                <label for="card__input_name">Name On Card</label>
+                <input type="text" id="card__input_name" placeholder="Name Surname">
+            </div>
+            <div class="card_column3">
+                <div class="card__numberdate">
+                    <label for="card__input_date">Expiry Date</label>
+                    <input type="number" id="card__input_date" min="01" max="31" placeholder="02" step="1">
+                </div>
+                <div class="card__year">
+                    <label for="card__input_year">Year</label>
+                    <input type="number" id="card__input_year" min="2000" max="2100" step="1" placeholder="2017">
+                </div>
+                <div class="card__cvv">
+                    <label for="card__input_cvv">CVV / CVN</label>
+                    <input type="password" id="card__input_cvv" min="000" max="999" step="1">
+                </div>
+            </div>
+        </div>
+    </section>
+    <a href="/lib.html">Библиотека стилей input</a>
+    <a href="/regfotm.html">ДЗ Регистрационная форма</a>
+</body>
+</html>

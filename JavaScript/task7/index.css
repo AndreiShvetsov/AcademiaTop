@@ -1,0 +1,232 @@
+body {
+  margin: auto;
+}
+
+h1 {
+  text-align: center;
+}
+
+.menu {
+  width: 550px;
+  margin: auto;
+}
+
+.task1 {
+  text-align: center;
+}
+
+#task2 {
+  height: 200px;
+  text-align: center;
+  width: 400px;
+  box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22);
+  background-color: rgb(231, 219, 204);
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  margin: auto;
+}
+
+#close {
+  margin-bottom: 10px;
+}
+
+#main {
+  display: none;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+#main:target {
+  display: block;
+}
+
+#area {
+  position: relative;
+}
+
+img {
+  width: 100%;
+  height: 720px;
+  object-fit: fill;
+  object-position: bottom;
+  position: absolute;
+}
+
+#border {
+  margin-top: 25px;
+  margin-left: 25px;
+  width: 96%;
+  height: 665px;
+  object-fit: fill;
+  object-position: bottom;
+  position: absolute;
+  z-index: 9;
+}
+
+#boll {
+  margin-left: -23px;
+  margin-top: -40px;
+  background: navy;
+  height: 50px;
+  width: 50px;
+  position: absolute;
+  border-radius: 50%;
+  display: none;
+  transition-duration: 1s;
+}
+
+.rectangle {
+  width: 250px;
+  height: 80px;
+  border: 3px;
+  border-style: solid;
+  display: flex;
+  margin-bottom: 10px;
+}
+
+.circl {
+  width: 60px;
+  height: 60px;
+  border: 3px;
+  border-style: solid;
+  border-radius: 50%;
+  margin-left: 10px;
+  margin-top: 8px;
+}
+
+.lis {
+  background-color: aqua;
+}
+
+.lisactive {
+  background-color: red;
+}
+
+.buts {
+  display: flex;
+  justify-content: center;
+}
+
+#bu1 {
+  margin-top: 30px;
+}
+
+#bu2 {
+  margin-left: 150px;
+  margin-top: -50px;
+}
+
+.tooltip {
+  position: fixed;
+  padding: 10px 20px;
+  border: 1px solid #b3c9ce;
+  border-radius: 4px;
+  text-align: center;
+  font: italic 14px/1.3 sans-serif;
+  color: #333;
+  background: #fff;
+  box-shadow: 3px 3px 3px rgba(0, 0, 0, 0.3);
+}
+
+.Container {
+  padding: 0;
+  margin: 0;
+}
+
+.Container li {
+  list-style-type: none;
+}
+
+.IsRoot {
+  margin-left: 0;
+}
+
+.Expand {
+  width: 18px;
+  height: 18px;
+  float: left;
+}
+
+.Content {
+  margin-left: 18px;
+  min-height: 18px;
+}
+
+.ExpandOpen .Expand {
+  width: 15px;
+  height: 15px;
+  background-image: url(./minus.png);
+  background-repeat: no-repeat;
+}
+
+/* закрытое поддерево */
+.ExpandClosed .Expand {
+  width: 15px;
+  height: 15px;
+  background-image: url(./plus.png);
+  background-repeat: no-repeat;
+}
+
+/* лист */
+.ExpandLeaf .Expand {
+  width: 15px;
+  height: 15px;
+  background-image: url(./dot.png);
+  background-repeat: no-repeat;
+}
+
+.Node {
+  margin-left: 18px;
+  zoom: 1;
+  /* линия слева образуется повторяющимся фоновым рисунком */
+  background-image: url(./linvert.png);
+  background-position: top left;
+  background-repeat: repeat-y;
+}
+
+.IsLast {
+  /* добавить соединительную черточку наверх */
+  background-image: url(./lingor.png);
+  background-repeat: no-repeat;
+}
+
+.ExpandOpen .Container {
+  display: block;
+}
+
+.ExpandClosed .Container {
+  display: none;
+}
+
+.ExpandOpen .Expand,
+.ExpandClosed .Expand {
+  cursor: pointer;
+  /* иконки скрытия-раскрытия */
+}
+
+.ExpandLeaf .Expand {
+  cursor: auto;
+  /* листовой узел */
+}
+
+.windo {
+  border: 3px solid green;
+  width: 500px;
+  height: 150px;
+  display: flex;
+  position: absolute;
+  z-index: 1000;
+}
+
+#res {
+  border: 8px solid transparent;
+  border-bottom: 20px solid green;
+  position: relative;
+  z-index: 1000;
+}

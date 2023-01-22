@@ -1,0 +1,236 @@
+* {
+  margin: 0;
+  padding: 0;
+  outline: 0;
+  box-sizing: border-box;
+}
+
+body {
+ background: white;
+ color: black;
+ -webkit-font-smoothing: antialiased;
+}
+
+body, input, button {
+ font-size: 1rem;
+ font-family: Arial, Helvetica, sans-serif;
+}
+.container {
+  background-color: wheat;
+  box-shadow: 0 0 9px black;
+  padding: 20px;
+}
+button {
+ cursor: pointer;
+}
+input, #pol {
+  padding: 5px;
+  border: 0;
+  border-bottom: 2px;
+  border-style: solid;
+  border-color: gray;
+  background-color: wheat;
+}
+.butt {
+  width: 150px;
+  background-color: green;
+  color: white;
+  border-radius: 5px;
+}
+.regtext {
+  margin-bottom: 10px;
+}
+.registration__password {
+  display: flex;
+}
+
+
+/* @media (min-width: 900px) {
+  section {
+    width: 900px;
+    margin: auto;
+  }
+  .regandpers {
+    display: flex;
+  }
+  .registration {
+    display: block;
+    width: 50%;
+  }
+  .regtext {
+    font-size: larger;
+  }
+  img {
+    width: 10%;
+    margin-right: 10px;
+  }
+  .registration__username, .registration__email, .registration__password {
+    display: flex;
+    align-items: center;
+    margin-top: 10px;
+    margin-bottom: 10px;
+  }
+  #password {
+    width: 45%;
+  }
+  #password2 {
+    width: 45%;
+    margin-left: 5px
+  }
+
+  .column2 {
+    display: block;
+    width: 50%;
+    margin-top: 17px;
+
+  }
+  .personal__name, .personal__pol_dat {
+    display: flex;
+    margin-bottom: 20px;
+  }
+  .last {
+    margin-left: 20px;
+  }
+  #pol {
+    width: 400px;
+  }
+  #date {
+    margin-left: 15px;
+    width: 400px;
+  }
+  .agree {
+    margin-top: 20px;
+    display: block;
+    width: 37%;
+    padding: 10px;
+  }
+  .submit {
+    display: flex;
+    justify-content: end;
+  }
+}
+@media (max-width: 900px) {
+  section {
+    width: 600px;
+    margin: auto;
+  }
+  .regandpers {
+    display: block;
+  }
+  .registration {
+    display: block;
+    width: 50%;
+  }
+  .regtext {
+    font-size: larger;
+  }
+  img {
+    width: 10%;
+    margin-right: 10px;
+  }
+  .registration__username, .registration__email, .registration__password {
+    display: flex;
+    align-items: center;
+    margin-top: 10px;
+    margin-bottom: 10px;
+  }
+  #password2 {
+    margin-left: 0px
+  }
+  .registration__username input, .registration__email input{
+    width: 100%;
+  }
+
+  .column2 {
+    display: block;
+    width: 50%;
+    margin-top: 17px;
+
+  }
+  .personal__name, .personal__pol_dat {
+    display: flex;
+    margin-bottom: 10px;
+  }
+  .last {
+    margin-left: 50px;
+  }
+  #pol {
+    width: 50%;
+    
+  }
+  #date {
+    margin-left: 50px;
+    width: 50%;
+  }
+  .agree {
+    margin-top: 20px;
+    display: block;
+    width: 55%;
+    padding: 10px;
+  }
+  .submit {
+    display: block;
+    justify-content: end;
+  }
+}
+@media (max-width: 600px) {
+  section {
+    width: 300px;
+    margin: auto;
+  }
+  .regandpers {
+    display: block;
+  }
+  .registration {
+    display: block;
+    width: 50%;
+  }
+  .regtext {
+    font-size: larger;
+  }
+  img {
+    width: 10%;
+    margin-right: 10px;
+  }
+  .registration__username, .registration__email, .registration__password {
+    display: flex;
+    align-items: center;
+    margin-top: 10px;
+    margin-bottom: 10px;
+  }
+  .registration__password_input {
+    display: block;
+  } 
+  .last {
+    margin-left: 0px;
+  }
+  #date {
+    margin-left: 0px;
+   }
+  .registration__username input, .registration__email input{
+    width: 100%;
+  }
+
+  .column2 {
+    display: block;
+    width: 50%;
+    margin-top: 17px;
+  }
+  .personal__pol_dat {
+    width: 400px;
+  }
+  .personal__name, .personal__pol_dat {
+    display: inline-block;
+  }
+
+  .agree {
+    display: block;
+    width: 240px;
+    padding: 10px;
+    font-size: 0.6rem;
+  }
+  .submit {
+    display: block;
+    justify-content: end;
+  }
+} */

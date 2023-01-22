@@ -1,0 +1,11 @@
+article {font-family: Verdana, Geneva, Tahoma, sans-serif; width: 90%; margin: auto;}
+header {text-align: center;}
+#ik {color: gray; font-family: Arial, Helvetica, sans-serif; font-style: italic; padding: 0px 40px;}
+.red {color: red; font-weight: bold;}
+.yellow {color: yellow; font-weight: bold;}
+.green {color: green; font-weight: bold;}
+.blue {color: blue; font-weight: bold;}
+.fiol {color: fuchsia; font-weight: bold;}
+.orange {color: orange; font-weight: bold;}
+.head1 {font-weight: bold; text-transform: uppercase; color: grey;}
+.smoltext {font-weight: normal; text-transform: lowercase; text-decoration: underline;}

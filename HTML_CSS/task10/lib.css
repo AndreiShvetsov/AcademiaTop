@@ -1,0 +1,106 @@
+* {
+  margin: 0;
+  padding: 0;
+  outline: 0;
+  box-sizing: border-box;
+}
+
+body {
+ background: lavender;
+ color: black;
+ -webkit-font-smoothing: antialiased;
+}
+
+body, input, button {
+ font-size: 1rem;
+ font-family: Arial, Helvetica, sans-serif;
+}
+
+button {
+ cursor: pointer;
+}
+section {
+  max-width: 1200px;
+  margin: auto;
+  padding: 10px;
+}
+.inputs, .check, .radio, .buttons {
+  margin-bottom: 20px;
+}
+.inputs input {
+  border: 2px;
+  border-style: solid;
+  padding: 10px;
+  border-radius: 5px;
+}
+.validtext {
+  color: green;
+  background-image: url(/img/valid.png);
+  background-repeat: no-repeat;
+  background-position: 95%;
+  background-size: 10%;
+}
+.invalidtext {
+  color: red;
+  background-image: url(/img/invalid.png);
+  background-repeat: no-repeat;
+  background-position: 95%;
+  background-size: 10%;
+}
+.activ {
+  background-color: lightgreen;
+  color: white;
+  padding: 10px;
+  border-radius: 10px;
+}
+.activ:hover {
+  background-color: green;
+  color: white;
+  padding: 10px;
+  border-radius: 10px;
+}
+.hover {
+  background-color: green;
+  color: white;
+  padding: 10px;
+  border-radius: 10px;
+}
+.danger {
+  background-color: brown;
+  color: white;
+  padding: 10px;
+  border-radius: 10px;
+}
+.danger:hover {
+  background-color: red;
+  color: white;
+  padding: 10px;
+  border-radius: 10px;
+}
+.hover2 {
+  background-color: red;
+  color: white;
+  padding: 10px;
+  border-radius: 10px;
+}
+.disabled {
+  background-color: gray;
+  color: white;
+  padding: 10px;
+  border-radius: 10px;
+}
+.plus {
+  background-color: green;
+  color: white;
+  padding: 10px;
+  border-radius: 100%;
+}
+.minus {
+  background-color: red;
+  color: white;
+  padding: 10px;
+  border-radius: 100%;
+}
+#text_area {
+  padding: 10px;
+}

@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="/regform.css" />
+    <title>Regform</title>
+  </head>
+  <body>
+    <a href="/index.html">ДЗ банковская карта</a>
+    <a href="/lib.html">ДЗ библиотека</a>
+    <section class="container">
+      <div class="regandpers row row-cols-12">
+        <div class="registration">
+          <label for="registration" class="regtext">Registration form</label>
+          <div class="registration__username">
+            <img src="/img/username.png" alt="username" />
+            <input type="text" placeholder="Username" class="col-4"/>
+          </div>
+          <div class="registration__email">
+            <img src="/img/email.png" alt="email" />
+            <input
+              type="email"
+              name="email"
+              id="email"
+              placeholder="Email address"
+              class="col-4"
+            />
+          </div>
+          <div class="registration__password">
+            <div class="registration__password_input">
+              <img src="/img/pswd.png" alt="pswd"/>
+                <input
+                type="password"
+                name="password"
+                id="password"
+                placeholder="Password"
+                class="col-2"
+              />
+            </div>
+            <div class="col">
+              <input
+                type="password"
+                name="password"
+                id="password2"
+                placeholder="Confirm password"
+                class="col-2"
+              />
+            </div>
+          </div>
+        </div>
+        <div class="personal">
+          <label for="personal" class="regtext">Personal detalis</label>
+          <div class="column2">
+            <div class="personal__name">
+              <input type="text" class="first col-4" placeholder="First name" />
+              <input type="text" class="last col-4" placeholder="Last name" />
+            </div>
+            <div class="personal__pol_dat row">
+              <div class="personal__select col-4">
+                  <select name="pol" id="pol" class="col-auto">
+                    <option value="male" selected>Male</option>
+                    <option value="female">Female</option>
+                  </select>
+              </div>
+              <div class="personal_dat col-auto">
+                <input type="date" name="date" id="date" />
+              </div>             
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="agree">
+        <div class="iwant">
+          <input type="checkbox" name="offers" id="offers" />
+          <label for="offers">I want to receive mews and special offers</label>
+        </div>
+        <div class="iagree">
+          <input type="checkbox" name="agree" id="agree" />
+          <label for="offers">I agree with Terms and Conditions</label>
+        </div>
+      </div>
+      <div class="submit">
+        <input type="button" class="butt" value="SUBMIT" />
+      </div>
+    </section>
+    <script
+      src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.5/dist/umd/popper.min.js"
+      integrity="sha384-Xe+8cL9oJa6tN/veChSP7q+mnSPaj5Bcu9mPX5F5xIGE0DVittaqT5lorf0EI7Vk"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.min.js"
+      integrity="sha384-kjU+l4N0Yf4ZOJErLsIcvOU2qSb74wXpOhqTvwVx3OElZRweTnQ6d31fXEoRD1Jy"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>

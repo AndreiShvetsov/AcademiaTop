@@ -1,0 +1,169 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+.container {
+    width: 100vw;
+    min-width: 320px;
+    max-width: 1024px;
+    margin: auto;
+    min-height: 100vh;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+}
+header {
+    margin: 3vh 5vh 0;
+    flex-basis: 10vh;
+}
+#logo {
+    width: 10vh;
+    padding: 2vh;
+    border-color: black;
+    border: 0.5vh;
+    border-style:solid;
+    margin-bottom: 1vh;
+}
+nav {
+    border-color: black;
+    border: 0.5vh;
+    border-style:solid;
+    padding: 1vh;
+    margin-bottom: 1vh;    
+}
+.ull li {
+    display: inline;
+    padding-right: 3vh;
+    float: left;
+}
+ul {
+    list-style-type: none;
+}
+.forma {
+    text-align: right;
+}
+.formaloga {
+    display: none;
+}
+main{
+    margin: 0vh 5vh;
+    display: flex;
+}
+section {
+    border-color: black;
+    border: 0.5vh;
+    border-style:solid;
+    padding: 1vh;
+    margin-bottom: 1vh;
+}
+.list {
+    padding: 1vh;
+    border-color: black;
+    border: 0.5vh;
+    border-style:solid;
+    margin-left: 1vh;
+}
+.lorem {
+    padding: 1vh;
+    border-color: black;
+    border: 0.5vh;
+    border-style:solid;
+    margin-left: 1vh;
+    margin-top: 1vh;
+    float: left;
+}
+img {
+    width: 80%;
+}
+.quatrum {
+    background-color:grey;
+    margin: 4px;
+    width: 40px;
+    height: 40px;
+    display: flex;
+    flex-direction: column;
+    float: left;
+}
+main>section{
+    
+    flex: 1 2 auto;
+}
+main>section+aside{
+    
+    flex-basis: 35%;
+}
+footer{
+    margin: 0vh 5vh 0;
+    display: flex;
+}
+@media screen and (max-width:768px)
+{
+    main>section+aside{
+        flex-basis: 30%;
+    }
+    header {
+        margin: 1vh 2vh 0;
+    }
+    main{
+        margin: 0vh 2vh;
+    }
+    footer{
+        margin: 0vh 2vh 0;
+    }
+    .forma {
+        display: none;
+    }
+    #logo {
+        float: left;
+    }
+    .formaloga {
+        text-align: right;
+        padding-top: 4.5vh;
+        display:block;
+    }
+    nav {
+        clear: both;
+        padding: 0.5vh 1vh 2.5vh 1vh;
+    }
+
+}
+@media screen and (max-width:320px){
+    main{
+        flex-direction: column;
+    }
+    header {
+        margin: 1vh 1vh 0;
+    }
+    main{
+        margin: 0vh 1vh;
+    }
+    footer{
+        margin: 0vh 1vh 0;
+    }
+    .list {
+        display: none;
+    }
+    .lorem {
+        margin-left: 0vh;
+        padding-left: 0vh;
+    }
+    #logo {
+        width: 4vh;
+    }
+    .formaloga input{
+        width: 50%;
+    }
+    .ull li {
+        padding-right: 1.5vh;
+        text-align: center;
+        font-size: small;
+    }
+    .lorem {
+        margin-top: 0vh;
+    }
+    div:nth-child(n+8) {
+        display: none;
+    }
+}
+
+   

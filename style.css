@@ -1,0 +1,40 @@
+.header__icon img {
+  width: 8vw;
+}
+header {
+  display: flex;
+  background-color: #29abe2;
+  justify-content: center;
+  align-items: center;
+}
+.header__text {
+  justify-items: center;
+  text-align: center;
+  color: white;
+  font-size: 1vw;
+}
+.header__text_academ {
+  border-bottom: 0.2vw solid;
+  border-right: 0.2vw solid;
+  border-image: linear-gradient(to bottom right, yellow, rgb(243, 7, 212));
+  border-image-slice: 0.5;
+}
+.main__title {
+  text-align: center;
+  font-size: 1.2vw;
+  font-family: "Sofia Sans", sans-serif;
+}
+.main__team {
+  text-align: center;
+  font-size: 1vw;
+  font-family: "Sofia Sans", sans-serif;
+  list-style-position: inside;
+}
+.main__list {
+  text-align: left;
+  width: 30vw;
+  margin: auto;
+}
+a {
+  text-decoration: none;
+}

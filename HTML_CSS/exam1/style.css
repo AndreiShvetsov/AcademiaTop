@@ -1,0 +1,250 @@
+* {
+  margin: 0;
+  padding: 0;
+  outline: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background: white;
+  color: black;
+  -webkit-font-smoothing: antialiased;
+}
+
+body,
+input,
+button {
+  font-size: 1rem;
+  font-family: "EB Garamond";
+}
+.metka {
+  display: none;
+}
+button {
+  cursor: pointer;
+}
+header {
+  display: flex;
+  align-items: center;
+  padding: 1rem;
+  justify-content: space-between;
+}
+.btn {
+  background: none;
+  border: lightgray;
+  border-style: solid;
+  color: lightgray;
+  padding: 0.5rem 1.5rem;
+  border-width: 1px;
+}
+.tour {
+  font-weight: bold;
+  margin: 0;
+  margin-left: 2rem;
+}
+ .navbar {
+  display: none;
+ } 
+a {
+  text-decoration: none;
+  color: black;
+  margin-left: 2rem;
+}
+.icon img {
+  width: 1.5rem;
+  margin-left: 1rem;
+}
+.gallery_h2,
+.features_h2,
+.write_h2 {
+  text-align: center;
+}
+.greeting, .story_fire, .story_lamp {
+  display: flex;
+  justify-content: space-between;
+}
+.greeting__text, .story_fire__text, .story_lamp__text  {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-top-style: solid;
+  border-color: lightgray;
+  border-width: 1px;
+}
+.greeting__text_text {
+  width: 22rem;
+}
+.greeting__img img {
+  width: 35rem;
+  height: 35rem;
+  object-fit: cover;
+}
+.story_fire__text_text {
+  margin-left: 5rem;
+  width: 35rem;  
+}
+.story_fire__img img {
+  width: 20rem;
+  height: 20rem;
+  object-fit: cover;
+}
+
+.story_lamp__text_text {
+  margin-right: 5rem;
+  width: 35rem;  
+}
+.story_lamp__img img {
+  width: 20rem;
+  height: 20rem;
+  object-fit: cover;
+}
+.gallery {
+  padding-top: 2rem;
+  border-top-style: solid;
+  border-color: lightgray;
+  border-width: 1px;
+}
+.carousel-item {
+  display: flex;
+}
+.carousel-item {
+  position: relative;
+}
+.gallery_h2 {
+  margin-bottom: 2rem;
+}
+.gallery__tent-item {
+  display: flex;
+}
+.gallery__tent {
+  width: 20rem;
+  height: 20rem;
+  object-fit: cover;
+}
+.gallery__night {
+  width: 10rem;
+  height: 20rem;
+  object-fit: cover;
+}
+.gallery__cauldron, .gallery__yarn {
+  width: 25rem;
+  height: 20rem;
+  object-fit: cover;
+}
+.gallery__tent_text, .gallery__cauldron_text, .gallery__night_text, .gallery__yarn_text {
+  width: 10rem;
+  color: white;
+  text-align: center;
+  position: absolute;
+  margin-top: 4rem;
+  justify-items: center;
+  opacity: 0;
+}
+.gallery__tent_text:hover {
+  opacity: 1;
+}
+.gallery__cauldron_text:hover {
+  opacity: 1;
+}
+.gallery__night_text:hover {
+  opacity: 1;
+}
+.gallery__yarn_text:hover {
+  opacity: 1;
+}
+
+.features {
+  display: flex;
+  margin-top: 2rem;
+  align-items: center;
+  text-align: center;
+  justify-content: center;
+}
+.features__air, .features__map, .features__movie, .features__clock, .features__face, .features__genius {
+  width: 25rem;
+  height: 25rem;
+  border-style: solid;
+  border-color: lightgray;
+  border-width: 1px;
+}
+.features__air, .features__map, .features__movie {
+  border-top-color: white;
+}
+.features__clock, .features__face, .features__genius {
+  border-bottom-color: white;
+}
+.features__air, .features__clock {
+  border-left-color: white;
+}
+.features__movie, .features__genius {
+  border-right-color: white;
+}
+.features img {
+  width: 2rem;
+  height: 2rem;
+  margin-top: 7rem;
+  margin-bottom: 1rem;
+}
+.features h5 {
+  margin-bottom: 1rem;
+}
+#feature_map_two {
+  margin-top: 1.5rem;
+}
+.write {
+  margin-top: 2rem;
+  border-bottom-style: solid;
+  border-color: lightgray;
+  justify-content: center;
+}
+.write__col {
+margin-left: 0.5rem;
+}
+.write_h2 {
+  margin-bottom: 2rem;
+}
+.write__col, .write__contact, .write__topic, .write__message  {
+  margin-bottom: 2rem;
+}
+.write__checks {
+  display: flex;
+  justify-content: space-between;
+}
+#topic {
+  width: 100%;
+  text-align: left;
+}
+#message {
+  border-color: lightgrey;
+}
+.write__message {
+  padding-left: 1.5rem;
+  padding-right: 1.5rem;
+}
+.write__footer {
+  margin-bottom: 2rem;
+  justify-content: center;
+}
+footer {
+  text-align: center;
+}
+.footer__icon {
+  display: flex;
+  margin: 2rem;
+  justify-content: center;
+}
+.footer__icon img {
+  width: 2.5rem;
+  margin-left: 1.5rem;
+  padding: 0.2rem;
+  border-style: solid;
+  border-radius: 50%;
+  border-width: 1px;
+}
+.footer__a {
+  opacity: 0.6;
+}
+.footer__a:hover {
+  border-color: black;
+  opacity: 1;
+}
