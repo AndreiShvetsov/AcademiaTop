@@ -1,14 +1,108 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-</head>
-<body>
-    <a href="/index.html">Вернуться в главное меню</a>
-    <script src="./index.js"></script>
-    <p>Смотреть консоль</p>
-</body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="task4.css" />
+    <title>Тема: объекты</title>
+  </head>
+  <body>
+    <a onclick="javascript:history.back(); return false;"
+      >Вернуться в главное меню</a
+    >
+
+    <!-- <script src="./index.js"></script>
+    <p>Смотреть консоль</p> -->
+    <div class="task1">
+      <p class="task_number">Задание 1</p>
+      <p>
+        Создать объект описывающий автомобиль (производитель, модель, год
+        выпуска, средняя скорость). Создать функцию: 1. Вывода вывода инофрмации
+        об автомобиле; 2. Подсчёт времени для преодоления предоставляемой
+        дистанции с учётом, что через каждые 4 часа дороги, перерыв 1 час.
+      </p>
+      <p>Заполните поля</p>
+      <div class="task1_form">
+        <div class="task1_input">
+          <form>
+            Введите производителя автомобиля
+            <input type="text" name="manufactur" id="manufactur" placeholder="Lada"/>
+          </form>
+          <form>
+            Введите модель автомобиля
+            <input type="text" name="model" id="model" placeholder="Vesta"/>
+          </form>
+          <form>
+            Введите год выпуска автомобиля
+            <input type="text" name="year" id="year" placeholder="2013"/>
+          </form>
+          <form>
+            Введите среднюю скорость автомобиля
+            <input type="number" name="speed" id="speed" placeholder="200"/>
+          </form>
+          <form>
+            Введите сколько киклометров нужно проехать на машине
+            <input type="number" name="distant" id="distant" placeholder="1500"/>
+          </form>
+        </div>
+        <div class="result">
+          <button onclick="task1();">
+            Вывести данные об автомобиле, как объекте и вычилсить сколько времени
+            понадобится на дорогу
+          </button>
+          <div class="result_text" id="task1_result"></div>
+        </div>
+      </div>
+    </div>
+
+    <p class="task_number">Задание 2</p>
+    <p>
+      Создать объект хранящий отдельно числитель и знаменатель дроби. Создать
+      функцию: 1. Сложения дробей; 2. Вычитание дробей; 3. Умножение дробей; 4.
+      Деления дробей; 5. Сокращения дроби
+    </p>
+    <p class="task_number">Задание 3</p>
+    <p>
+      Создать объект описывающий время (часы, минуты, секунды). Создать функцию:
+      1. Вывод времени на экран; 2. Прибавление секунд; 3. Прибавление минут; 4.
+      Прибавление часов; 5. Сокращения дроби
+    </p>
+  </body>
+  <script>
+    function task1() {
+      let manufactur = document.querySelector("#manufactur").value;
+      let model = document.querySelector("#model").value;
+      let year = document.querySelector("#year").value;
+      let speed = document.querySelector("#speed").value;
+      let distant = document.querySelector("#distant").value;
+      let car = {
+        manufactur: { manufactur },
+        model: { model },
+        year: { year },
+        speed: { speed },
+      };
+      console.log(car);
+      let moment = car.manufactur;
+      const travelTime = (distant, speed) => {
+        speed = document.querySelector("#speed").value;
+        distant = document.querySelector("#distant").value;
+        let result = distant / speed;
+        if (result > 4) {
+          let timePlus = result / 4;
+          result += timePlus;
+        }
+        return console.log(
+          "Вы задали расстояние " +
+            distant +
+            " км . Автомобиль едущий со скоростью " +
+            speed +
+            " км/ч проедет данное расстояние за " +
+            result +
+            " ч. С учётом отдыха по 1 часу через каждые 4 часа."
+        );
+      };
+      travelTime(car.distant, car.speed);
+    }
+  </script>
 </html>
