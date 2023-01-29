@@ -27,82 +27,144 @@
         <div class="task1_input">
           <form>
             Введите производителя автомобиля
-            <input type="text" name="manufactur" id="manufactur" placeholder="Lada"/>
+            <input
+              type="text"
+              name="manufactur"
+              id="manufactur"
+              placeholder="Lada"
+            />
           </form>
           <form>
             Введите модель автомобиля
-            <input type="text" name="model" id="model" placeholder="Vesta"/>
+            <input type="text" name="model" id="model" placeholder="Vesta" />
           </form>
           <form>
             Введите год выпуска автомобиля
-            <input type="text" name="year" id="year" placeholder="2013"/>
+            <input type="text" name="year" id="year" placeholder="2013" />
           </form>
           <form>
             Введите среднюю скорость автомобиля
-            <input type="number" name="speed" id="speed" placeholder="200"/>
+            <input type="number" name="speed" id="speed" placeholder="200" />
           </form>
           <form>
             Введите сколько киклометров нужно проехать на машине
-            <input type="number" name="distant" id="distant" placeholder="1500"/>
+            <input
+              type="number"
+              name="distant"
+              id="distant"
+              placeholder="1500"
+            />
           </form>
         </div>
         <div class="result">
           <button onclick="task1();">
-            Вывести данные об автомобиле, как объекте и вычилсить сколько времени
-            понадобится на дорогу
+            Вывести данные об автомобиле, как объекте и вычилсить сколько
+            времени понадобится на дорогу
           </button>
           <div class="result_text" id="task1_result"></div>
         </div>
       </div>
     </div>
-
-    <p class="task_number">Задание 2</p>
-    <p>
-      Создать объект хранящий отдельно числитель и знаменатель дроби. Создать
-      функцию: 1. Сложения дробей; 2. Вычитание дробей; 3. Умножение дробей; 4.
-      Деления дробей; 5. Сокращения дроби
-    </p>
-    <p class="task_number">Задание 3</p>
-    <p>
-      Создать объект описывающий время (часы, минуты, секунды). Создать функцию:
-      1. Вывод времени на экран; 2. Прибавление секунд; 3. Прибавление минут; 4.
-      Прибавление часов; 5. Сокращения дроби
-    </p>
+    <div class="task2">
+      <p class="task_number">Задание 2</p>
+      <p>
+        Создать объект хранящий отдельно числитель и знаменатель дроби. Создать
+        функцию: 1. Сложения дробей; 2. Вычитание дробей; 3. Умножение дробей;
+        4. Деления дробей; 5. Сокращения дроби
+      </p>
+      <p>Заполните поля</p>
+      <div class="task1_form">
+        <div class="task2_fraction">
+          <div class="fraction">
+            <p>Первая дробь</p>
+            <form>
+              Числитель
+              <input
+                class="numerator"
+                type="number"
+                id="fra1num1"
+                placeholder="1"
+              />
+            </form>
+            <form>
+              Знаменатель
+              <input
+                class="denumerator"
+                type="number"
+                id="fra1denum1"
+                placeholder="1"
+              />
+            </form>
+          </div>
+          <div class="fraction">
+            <p>Вторая дробь</p>
+            <form>
+              Числитель
+              <input
+                class="numerator"
+                type="number"
+                id="fra2num2"
+                placeholder="1"
+              />
+            </form>
+            <form>
+              Знаменатель
+              <input
+                class="denumerator"
+                type="number"
+                id="fra2denum2"
+                placeholder="1"
+              />
+            </form>
+          </div>
+          <p style="color: red">
+            Ввод дробей пока не работает. Используемые дроби отображены в
+            консоли. Так же сокращение дроби проводится на первоначально
+            заданных дробях, а не на результатах вычислений
+          </p>
+          <div class="result">
+            <button onclick="task2();">Произвести расчёты</button>
+            <div class="result_text" id="task2_result1"></div>
+            <div class="result_text" id="task2_result2"></div>
+            <div class="result_text" id="task2_result3"></div>
+            <div class="result_text" id="task2_result4"></div>
+            <div class="result_text" id="task2_result5"></div>
+            <div class="result_text" id="task2_result6"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="task3">
+      <p class="task_number">Задание 3</p>
+      <p>
+        Создать объект описывающий время (часы, минуты, секунды). Создать
+        функцию: 1. Вывод времени на экран; 2. Прибавление секунд; 3.
+        Прибавление минут; 4. Прибавление часов;
+      </p>
+      <p>Заполните поля</p>
+      <div class="task1_form">
+        <div class="task1_input">
+          <form>
+            Введите часы
+            <input type="number" id="hours" placeholder="1" />
+          </form>
+          <form>
+            Введите минуты
+            <input type="number" id="minuts" placeholder="1" />
+          </form>
+          <form>
+            Введите секунды
+            <input type="number" id="seconds" placeholder="1" />
+          </form>
+        </div>
+        <div class="result">
+          <button onclick="task3();">Произвести расчёты</button>
+          <div class="result_text" id="task3_result1"></div>
+          <div class="result_text" id="task3_result2"></div>
+          <div class="result_text" id="task3_result3"></div>
+        </div>
+      </div>
+    </div>
   </body>
-  <script>
-    function task1() {
-      let manufactur = document.querySelector("#manufactur").value;
-      let model = document.querySelector("#model").value;
-      let year = document.querySelector("#year").value;
-      let speed = document.querySelector("#speed").value;
-      let distant = document.querySelector("#distant").value;
-      let car = {
-        manufactur: { manufactur },
-        model: { model },
-        year: { year },
-        speed: { speed },
-      };
-      console.log(car);
-      let moment = car.manufactur;
-      const travelTime = (distant, speed) => {
-        speed = document.querySelector("#speed").value;
-        distant = document.querySelector("#distant").value;
-        let result = distant / speed;
-        if (result > 4) {
-          let timePlus = result / 4;
-          result += timePlus;
-        }
-        return console.log(
-          "Вы задали расстояние " +
-            distant +
-            " км . Автомобиль едущий со скоростью " +
-            speed +
-            " км/ч проедет данное расстояние за " +
-            result +
-            " ч. С учётом отдыха по 1 часу через каждые 4 часа."
-        );
-      };
-      travelTime(car.distant, car.speed);
-    }
-  </script>
+  <script src="script.js"></script>
 </html>

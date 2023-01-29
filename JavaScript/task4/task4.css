@@ -27,3 +27,12 @@ input {
 button {
     width: 20vw;
 }
+.task2_fraction {
+    display: flex;
+}
+.fraction {
+    width: 10vw;
+}
+.numerator, .denumerator {
+    width: 2vw;
+}
