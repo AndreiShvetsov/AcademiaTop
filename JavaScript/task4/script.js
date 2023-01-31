@@ -5,10 +5,10 @@ function task1() {
   let year = document.querySelector("#year").value;
   let speed = document.querySelector("#speed").value;
   let car = {
-    manufactur: { manufactur },
-    model: { model },
-    year: { year },
-    speed: { speed },
+    manufactur: manufactur,
+    model: model,
+    year: year,
+    speed: speed,
   };
   const travelTime = (distant, speed) => {
     speed = document.querySelector("#speed").value;
@@ -29,96 +29,40 @@ function task1() {
 }
 // Задание 2
 function task2() {
-  // let numerator1 = document.querySelector("#fra1num1").velue;
-  // let numerator2 = document.querySelector("#fra2num2").velue;
-  // let denumerator1 = document.querySelector("#fra1denum1").velue;
-  // let denumerator2 = document.querySelector("#fra2denum2").velue;
-  // let fraction1 = {
-  //   numerator:  {numerator1},
-  //   denumerator:  {denumerator1},
-  // };
-  // let fraction2 = {
-  //   numerator: {numerator2},
-  //   denumerator: {denumerator2},
-  // };
+  let fractionadd = {
+    numerator: 0,
+    denumerator: 0,
+    id: "task2_result5",
+  };
+  let fractionsub = {
+    numerator: 0,
+    denumerator: 0,
+    id: "task2_result6",
+  };
+  let fractionmult = {
+    numerator: 0,
+    denumerator: 0,
+    id: "task2_result7",
+  };
+  let fractiondiv = {
+    numerator: 0,
+    denumerator: 0,
+    id: "task2_result8",
+  };
+  let numerator1 = document.querySelector("#fra1num1").value;
+  let numerator2 = document.querySelector("#fra2num2").value;
+  let denumerator1 = document.querySelector("#fra1denum1").value;
+  let denumerator2 = document.querySelector("#fra2denum2").value;
   let fraction1 = {
-    numerator: 4,
-    denumerator: 8,
+    numerator: numerator1,
+    denumerator: denumerator1,
   };
   let fraction2 = {
-    numerator: 2,
-    denumerator: 6,
+    numerator: numerator2,
+    denumerator: denumerator2,
   };
-  // Прибавление дробей
-  console.log(fraction1, fraction2);
-  let addition = (a, b) => {
-    let fractionresult = {
-      numerator: 0,
-      denumerator: 0,
-    };
-    if (a.denumerator !== b.denumerator) {
-      fractionresult.denumerator = a.denumerator * b.denumerator;
-      fractionresult.numerator = a.numerator + b.numerator;
-      return (document.getElementById(
-        "task2_result1"
-      ).innerHTML = `<p>Сумма дробей <br> ${fractionresult.numerator} / ${fractionresult.denumerator}</p>`);
-    }
-    let resultadd = (fractionresult.numerator = a.numerator + b.numerator);
-    return (document.getElementById(
-      "task2_result1"
-    ).innerHTML = `<p>Сумма дробей <br> ${resultadd} / ${a.denumerator}</p>`);
-  };
-  addition(fraction1, fraction2);
-
-  // Вычитание дробей
-  const subtraction = (a, b) => {
-    let fractionresult = {
-      numerator: 0,
-      denumerator: 0,
-    };
-    if (a.denumerator !== b.denumerator) {
-      fractionresult.denumerator = a.denumerator * b.denumerator;
-      fractionresult.numerator = a.numerator - b.numerator;
-      return (document.getElementById(
-        "task2_result2"
-      ).innerHTML = `<p>Разность дробей <br> ${fractionresult.numerator} / ${fractionresult.denumerator}</p>`);
-    }
-    let resultsub = (fractionresult.numerator = a.numerator - b.numerator);
-    return (document.getElementById(
-      "task2_result2"
-    ).innerHTML = `<p>Разность дробей <br> ${resultsub} / ${a.denumerator}</p>`);
-  };
-
-  subtraction(fraction1, fraction2);
-  // Умножение дробей
-  const multiplication = (a, b) => {
-    let fractionresult = {
-      numerator: 0,
-      denumerator: 0,
-    };
-    fractionresult.denumerator = a.denumerator * b.denumerator;
-    fractionresult.numerator = a.numerator * b.numerator;
-    return (document.getElementById(
-      "task2_result3"
-    ).innerHTML = `<p>Умножение дробей <br> ${fractionresult.numerator} / ${fractionresult.denumerator}</p>`);
-  };
-
-  multiplication(fraction1, fraction2);
-  // Деление дробей
-  const division = (a, b) => {
-    let fractionresult = {
-      numerator: 0,
-      denumerator: 0,
-    };
-    fractionresult.denumerator = a.denumerator * b.numerator;
-    fractionresult.numerator = a.numerator * b.denumerator;
-    return (document.getElementById(
-      "task2_result4"
-    ).innerHTML = `<p>Деление дробей <br> ${fractionresult.numerator} / ${fractionresult.denumerator}</p>`);
-  };
-  division(fraction1, fraction2);
   // Сокращение дроби
-  const reduction = (fraction, num) => {
+  const reduction = (fraction) => {
     let fractionresult = {
       numerator: 0,
       denumerator: 0,
@@ -135,11 +79,105 @@ function task2() {
     fractionresult.numerator = result.numerator / resu;
     fractionresult.denumerator = result.denumerator / resu;
     return (document.getElementById(
-      "task2_result" + num
-    ).innerHTML = `<p>Сокращение дроби <br> ${fractionresult.numerator} / ${fractionresult.denumerator}</p>`);
+      fraction.id
+    ).innerHTML = `<p>Сокращение дроби <br> = ${fractionresult.numerator} / ${fractionresult.denumerator}</p>`);
   };
-  reduction(fraction1, 5);
-  reduction(fraction2, 6);
+  // Прибавление дробей
+  let addition = (a, b) => {
+    let fractionresult = {
+      numerator: 0,
+      denumerator: 0,
+    };
+    if (a.denumerator !== b.denumerator) {
+      fractionresult.denumerator = a.denumerator * b.denumerator;
+      fractionresult.numerator =
+        a.numerator * b.denumerator + b.numerator * a.denumerator;
+      document.getElementById(
+        "task2_result1"
+      ).innerHTML = `<p>Сумма дробей <br> ${fractionresult.numerator} / ${fractionresult.denumerator}</p>`;
+      return (
+        (fractionadd.numerator = fractionresult.numerator),
+        (fractionadd.denumerator = fractionresult.denumerator)
+      );
+    }
+    let resultadd = (fractionresult.numerator = a.numerator + b.numerator);
+    document.getElementById(
+      "task2_result1"
+    ).innerHTML = `<p>Сумма дробей <br> ${resultadd} / ${a.denumerator}</p>`;
+    return (
+      (fractionadd.numerator = resultadd),
+      (fractionadd.denumerator = a.denumerator)
+    );
+  };
+  addition(fraction1, fraction2);
+  reduction(fractionadd);
+  // Вычитание дробей
+  const subtraction = (a, b) => {
+    let fractionresult = {
+      numerator: 0,
+      denumerator: 0,
+    };
+    if (a.denumerator !== b.denumerator) {
+      fractionresult.denumerator = a.denumerator * b.denumerator;
+      fractionresult.numerator =
+        a.numerator * b.denumerator - b.numerator * a.denumerator;
+      document.getElementById(
+        "task2_result2"
+      ).innerHTML = `<p>Разность дробей <br> ${fractionresult.numerator} / ${fractionresult.denumerator}</p>`;
+      return (
+        (fractionsub.numerator = fractionresult.numerator),
+        (fractionsub.denumerator = fractionresult.denumerator)
+      );
+    }
+    let resultsub = (fractionresult.numerator = a.numerator - b.numerator);
+    document.getElementById(
+      "task2_result2"
+    ).innerHTML = `<p>Разность дробей <br> ${resultsub} / ${a.denumerator}</p>`;
+    return (
+      (fractionsub.numerator = resultsub),
+      (fractionsub.denumerator = a.denumerator)
+    );
+  };
+
+  subtraction(fraction1, fraction2);
+  reduction(fractionsub);
+  // Умножение дробей
+  const multiplication = (a, b) => {
+    let fractionresult = {
+      numerator: 0,
+      denumerator: 0,
+    };
+    fractionresult.denumerator = a.denumerator * b.denumerator;
+    fractionresult.numerator = a.numerator * b.numerator;
+    document.getElementById(
+      "task2_result3"
+    ).innerHTML = `<p>Умножение дробей <br> ${fractionresult.numerator} / ${fractionresult.denumerator}</p>`;
+    return (
+      (fractionmult.numerator = fractionresult.numerator),
+      (fractionmult.denumerator = fractionresult.denumerator)
+    );
+  };
+
+  multiplication(fraction1, fraction2);
+  reduction(fractionmult);
+  // Деление дробей
+  const division = (a, b) => {
+    let fractionresult = {
+      numerator: 0,
+      denumerator: 0,
+    };
+    fractionresult.denumerator = a.denumerator * b.numerator;
+    fractionresult.numerator = a.numerator * b.denumerator;
+    document.getElementById(
+      "task2_result4"
+    ).innerHTML = `<p>Деление дробей <br> ${fractionresult.numerator} / ${fractionresult.denumerator}</p>`;
+    return (
+      (fractiondiv.numerator = fractionresult.numerator),
+      (fractiondiv.denumerator = fractionresult.denumerator)
+    );
+  };
+  division(fraction1, fraction2);
+  reduction(fractiondiv);
 }
 
 // 3 задание. Объект время
@@ -168,90 +206,43 @@ function task3() {
   const timeSee = (time) => {
     return (document.getElementById(
       "task3_result2"
-    ).innerHTML = `<p>Вы ввели часы ${time.hour} минуты ${time.minutes} секунды ${time.seconds}</p>`);
+    ).innerHTML = `<p>Вы ввели ${time.hour}:${time.minutes}:${time.seconds}</p>`);
   };
   timeSee(time);
   // Прибавление времени
-  let addTime = (time1, time2) => {
-    let recTime = new Date(
-      2022,
-      0,
-      12,
-      time1.hour + time2.hour,
-      time1.minutes + time2.minutes,
-      time1.seconds + time2.seconds
-    );
-    let timeres = recTime.hours + ":" + recTime.minutes + ":" + recTime.seconds;
-    return (document.getElementById(
-      "task3_result3"
-    ).innerHTML = `<p>Результат прибавления времени ${timeres}</p>`);
+  let resultSum = {
+    date: 0,
+    hours: 0,
+    minutes: 0,
+    seconds: 0,
   };
-  addTime(time, date);
+  function timeaddsec(seconds1, seconds2) {
+    resultSum.seconds += parseInt(seconds1) + parseInt(seconds2);
+    for (resultSum.seconds; resultSum.seconds >= 60; resultSum.seconds -= 60) {
+      resultSum.minutes += 1;
+    }
+  }
+  function timeaddmin(minutes1, minutes2) {
+    resultSum.minutes += parseInt(minutes1) + parseInt(minutes2);
+    for (resultSum.minutes; resultSum.minutes >= 60; resultSum.minutes -= 60) {
+      resultSum.hours += 1;
+    }
+  }
+  function timeaddhour(hours1, hours2) {
+    resultSum.hours += parseInt(hours1) + parseInt(hours2);
+    for (resultSum.hours; resultSum.hours >= 24; resultSum.hours -= 24) {
+      resultSum.date += 1;
+    }
+  }
+  timeaddsec(time.seconds, date.getSeconds());
+  timeaddmin(time.minutes, date.getMinutes());
+  timeaddhour(time.hour, date.getHours());
 
-  // Прибавление секунд
-  const addSec = (time, sec) => {
-    let recTime = new Date(
-      2022,
-      0,
-      12,
-      time.hour,
-      time.minutes,
-      time.seconds + sec
-    );
-    console.log(
-      "Прибавляем " +
-        sec +
-        " секунд к установленному времени и получаем " +
-        recTime.getHours() +
-        ":" +
-        recTime.getMinutes() +
-        ":" +
-        recTime.getSeconds()
-    );
-  };
-  addSec(time, 75);
-  // Прибавление минуты
-  const addMin = (time, min) => {
-    let recTime = new Date(
-      2022,
-      0,
-      12,
-      time.hour,
-      time.minutes + min,
-      time.seconds
-    );
-    console.log(
-      "Прибавляем " +
-        min +
-        " минуту к установленному времени и получаем " +
-        recTime.getHours() +
-        ":" +
-        recTime.getMinutes() +
-        ":" +
-        recTime.getSeconds()
-    );
-  };
-  addMin(time, 31);
-  // Прибавление часов
-  const addHour = (time, hour) => {
-    let recTime = new Date(
-      2022,
-      0,
-      12,
-      time.hour + hour,
-      time.minutes,
-      time.seconds
-    );
-    console.log(
-      "Прибавляем " +
-        hour +
-        " часов к установленному времени и получаем " +
-        recTime.getHours() +
-        ":" +
-        recTime.getMinutes() +
-        ":" +
-        recTime.getSeconds()
-    );
-  };
-  addHour(time, 6);
+  if (resultSum.hours < 10) resultSum.hours = "0" + resultSum.hours;
+  if (resultSum.minutes < 10) resultSum.minutes = "0" + resultSum.minutes;
+  if (resultSum.seconds < 10) resultSum.seconds = "0" + resultSum.seconds;
+
+  return (document.getElementById(
+    "task3_result3"
+  ).innerHTML = `<p>Сумма времени равна  ${resultSum.date} дней ${resultSum.hours}:${resultSum.minutes}:${resultSum.seconds}</p>`);
 }

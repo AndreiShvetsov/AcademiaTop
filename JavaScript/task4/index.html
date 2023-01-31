@@ -117,19 +117,21 @@
               />
             </form>
           </div>
-          <p style="color: red">
-            Ввод дробей пока не работает. Используемые дроби отображены в
-            консоли. Так же сокращение дроби проводится на первоначально
-            заданных дробях, а не на результатах вычислений
-          </p>
+          <div><button onclick="task2();">Произвести расчёты</button></div>
           <div class="result">
-            <button onclick="task2();">Произвести расчёты</button>
-            <div class="result_text" id="task2_result1"></div>
-            <div class="result_text" id="task2_result2"></div>
-            <div class="result_text" id="task2_result3"></div>
-            <div class="result_text" id="task2_result4"></div>
-            <div class="result_text" id="task2_result5"></div>
-            <div class="result_text" id="task2_result6"></div>
+            <div class="result_block">
+              <div class="result_text" id="task2_result1"></div>
+              <div class="result_text" id="task2_result2"></div>
+              <div class="result_text" id="task2_result3"></div>
+              <div class="result_text" id="task2_result4"></div>
+            </div>
+
+            <div class="result_block">
+              <div class="result_text" id="task2_result5"></div>
+              <div class="result_text" id="task2_result6"></div>
+              <div class="result_text" id="task2_result7"></div>
+              <div class="result_text" id="task2_result8"></div>
+            </div>
           </div>
         </div>
       </div>
@@ -157,11 +159,13 @@
             <input type="number" id="seconds" placeholder="1" />
           </form>
         </div>
+        <button onclick="task3();">Произвести расчёты</button>
         <div class="result">
-          <button onclick="task3();">Произвести расчёты</button>
-          <div class="result_text" id="task3_result1"></div>
-          <div class="result_text" id="task3_result2"></div>
-          <div class="result_text" id="task3_result3"></div>
+          <div>
+            <div class="result_text" id="task3_result1"></div>
+            <div class="result_text" id="task3_result2"></div>
+            <div class="result_text" id="task3_result3"></div>
+          </div>
         </div>
       </div>
     </div>
