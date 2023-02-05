@@ -130,8 +130,8 @@
 //     console.log (resull); 
 // }
 // 10 задание
-let Vari = NaN;
-alert ('Загадайте число от 0 до 100');
-for (let dist = 50; dist === 50; Vari = promt('Ваше число больше ">", меньше "<" или равно "="'+dist)){
-    if (Vari=== ">"){}
-}
+// let Vari = NaN;
+// alert ('Загадайте число от 0 до 100');
+// for (let dist = 50; dist === 50; Vari = promt('Ваше число больше ">", меньше "<" или равно "="'+dist)){
+//     if (Vari=== ">"){}
+// }
