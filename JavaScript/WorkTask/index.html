@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <style>
+      .info, p {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+      #lt300 {
+        width: 11vw;
+        height: 20vh;
+      }
+      #lta285,
+      #lta291,
+      #lta531,
+      #lta532 {
+        width: 15vw;
+        height: 20vh;
+      }
+    </style>
+    <title>LTA и ЛТ</title>
+  </head>
+  <body>
+    <header>
+      <p>
+        Для обработки результатов измерений электронных термометров LTA-2K-K и
+        ЛТ-300
+      </p>
+    </header>
+    <div class="info">
+      <form class="lt">
+        <textarea
+          type="text"
+          placeholder="Вставить значения ЛТ-300"
+          name="lt300"
+          id="lt300"
+        ></textarea>
+        <textarea
+          type="text"
+          placeholder="Вставить значения ЛТА-2К-К (285)"
+          name="lta"
+          id="lta285"
+        ></textarea>
+        <textarea
+          type="text"
+          placeholder="Вставить значения ЛТА-2К-К (291)"
+          name="lta"
+          id="lta291"
+        ></textarea>
+        <textarea
+          type="text"
+          placeholder="Вставить значения ЛТА-2К-К (531)"
+          name="lta"
+          id="lta531"
+        ></textarea>
+        <textarea
+          type="text"
+          placeholder="Вставить значения ЛТА-2К-К (532)"
+          name="lta"
+          id="lta532"
+        ></textarea>
+        <div class="info">
+          <button type="button" onClick="window.location.reload();">
+            Очистить окна
+          </button>
+          <button type="button" onclick="task();">Обработать</button>
+        </div>
+      </form>
+      <form>
+        <div id="result"></div>
+      </form>
+    </div>
+
+    <script>
+      function task() {
+        // Обработка для ЛТ-300
+        let lt300 = document.getElementById("lt300").value.replace(/\./g, ",");
+        let lt300All = lt300.split(["\n"]);
+        let lt300t = [];
+        lt300All.forEach((item) => {
+          lt300t.push(item.substring(5));
+        });
+
+        // Обработка для LTA 285
+        let lta285 = document
+          .getElementById("lta285")
+          .value.replace(/\./g, ",");
+        let lta285all = lta285.split(["\n"]);
+        let lta285t1 = [];
+        let lta285t2 = [];
+        lta285all.forEach((item) => {
+          lta285t1.push(item.substring(11, 21));
+          lta285t2.push(item.substring(33, 43));
+        });
+        // Обработка для LTA 291
+        let lta291 = document
+          .getElementById("lta291")
+          .value.replace(/\./g, ",");
+        let lta291all = lta291.split(["\n"]);
+        let lta291t1 = [];
+        let lta291t2 = [];
+        lta291all.forEach((item) => {
+          lta291t1.push(item.substring(11, 21));
+          lta291t2.push(item.substring(33, 43));
+        });
+        // Обработка для LTA 531
+        let lta531 = document
+          .getElementById("lta531")
+          .value.replace(/\./g, ",");
+        let lta531all = lta531.split(["\n"]);
+        let lta531t1 = [];
+        let lta531t2 = [];
+        lta531all.forEach((item) => {
+          lta531t1.push(item.substring(11, 21));
+          lta531t2.push(item.substring(33, 43));
+        });
+        // Обработка для LTA 532
+        let lta532 = document
+          .getElementById("lta532")
+          .value.replace(/\./g, ",");
+        let lta532all = lta532.split(["\n"]);
+        let lta532t1 = [];
+        let lta532t2 = [];
+        lta532all.forEach((item) => {
+          lta532t1.push(item.substring(11, 21));
+          lta532t2.push(item.substring(33, 43));
+        });
+
+        // Таблица
+        const tbl = document.createElement("table");
+        const tblBody = document.createElement("tbody");
+
+        for (let i = 0; i < lt300t.length; i++) {
+          const row = document.createElement("tr");
+
+          for (let j = 0; j < 1; j++) {
+            const cell = document.createElement("td");
+            const cell2 = document.createElement("td");
+            const cell3 = document.createElement("td");
+            const cell4 = document.createElement("td");
+            const cell5 = document.createElement("td");
+            const cell6 = document.createElement("td");
+            const cell7 = document.createElement("td");
+            const cell8 = document.createElement("td");
+            const cell9 = document.createElement("td");
+            const cellText = document.createTextNode(`${lt300t[i]}`);
+            const cellText2 = document.createTextNode(`${lta285t1[i]}`);
+            const cellText3 = document.createTextNode(`${lta285t2[i]}`);
+            const cellText4 = document.createTextNode(`${lta291t1[i]}`);
+            const cellText5 = document.createTextNode(`${lta291t2[i]}`);
+            const cellText6 = document.createTextNode(`${lta531t1[i]}`);
+            const cellText7 = document.createTextNode(`${lta531t2[i]}`);
+            const cellText8 = document.createTextNode(`${lta532t1[i]}`);
+            const cellText9 = document.createTextNode(`${lta532t2[i]}`);
+            cell.appendChild(cellText);
+            cell2.appendChild(cellText2);
+            cell3.appendChild(cellText3);
+            cell4.appendChild(cellText4);
+            cell5.appendChild(cellText5);
+            cell6.appendChild(cellText6);
+            cell7.appendChild(cellText7);
+            cell8.appendChild(cellText8);
+            cell9.appendChild(cellText9);
+            row.appendChild(cell);
+            row.appendChild(cell2);
+            row.appendChild(cell3);
+            row.appendChild(cell4);
+            row.appendChild(cell5);
+            row.appendChild(cell6);
+            row.appendChild(cell7);
+            row.appendChild(cell8);
+            row.appendChild(cell9);
+          }
+          tblBody.appendChild(row);
+        }
+        tbl.appendChild(tblBody);
+        document.getElementById("result").appendChild(tbl);
+        tbl.setAttribute("border", "1");
+      }
+    </script>
+  </body>
+</html>
