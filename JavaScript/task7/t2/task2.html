@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./style.css" />
+    <script src="./task2.js"></script>
+    <title>Task2</title>
+  </head>
+
+  <body class="bs">
+    <a href="../indexTask.html">На главную</a>
+    <h1>Задание 2</h1>
+    <div class="task1">
+      <div>
+        <p>
+          Создать html-страницу с кнопкой Открыть и модальным окном. На
+          модальном окне должен быть текст и кнопка Закрыть. Изначально
+          модальное окно не отображается. При клике на кнопку Открыть появляется
+          модальное окно, на кнопку Закрыть – исчезает.
+        </p>
+      </div>
+      <button id="open" onclick="openWin(event);">Открыть модально окно</button>
+    </div>
+    <a href="#" id="main">
+      <div id="task2"  onclick="closeWin(event);">
+        <p>
+          function openWin(event) { <br />
+          main.style.display = "block"; <br />
+          };<br />
+          function closeWin(event) { <br />
+          main.style.display = "none"; <br />
+          };<br />
+        </p>
+        <button id="close" onclick="closeWin(event);">Нажми на меня или на окно и модальное окно закроется</button>
+      </div>
+    </a>
+    <div id="clos"></div>
+  </body>
+</html>

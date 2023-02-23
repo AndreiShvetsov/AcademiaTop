@@ -1,0 +1,83 @@
+body {
+    margin: auto;
+  }
+.Container {
+    padding: 0;
+    margin: 0;
+  }
+  
+  .Container li {
+    list-style-type: none;
+  }
+  
+  .IsRoot {
+    margin-left: 0;
+  }
+  
+  .Expand {
+    width: 18px;
+    height: 18px;
+    float: left;
+  }
+  
+  .Content {
+    margin-left: 18px;
+    min-height: 18px;
+  }
+  
+  .ExpandOpen .Expand {
+    width: 15px;
+    height: 15px;
+    background-image: url(./minus.png);
+    background-repeat: no-repeat;
+  }
+  
+  /* закрытое поддерево */
+  .ExpandClosed .Expand {
+    width: 15px;
+    height: 15px;
+    background-image: url(./plus.png);
+    background-repeat: no-repeat;
+  }
+  
+  /* лист */
+  .ExpandLeaf .Expand {
+    width: 15px;
+    height: 15px;
+    background-image: url(./dot.png);
+    background-repeat: no-repeat;
+  }
+  
+  .Node {
+    margin-left: 18px;
+    zoom: 1;
+    /* линия слева образуется повторяющимся фоновым рисунком */
+    background-image: url(./linvert.png);
+    background-position: top left;
+    background-repeat: repeat-y;
+  }
+  
+  .IsLast {
+    /* добавить соединительную черточку наверх */
+    background-image: url(./lingor.png);
+    background-repeat: no-repeat;
+  }
+  
+  .ExpandOpen .Container {
+    display: block;
+  }
+  
+  .ExpandClosed .Container {
+    display: none;
+  }
+  
+  .ExpandOpen .Expand,
+  .ExpandClosed .Expand {
+    cursor: pointer;
+    /* иконки скрытия-раскрытия */
+  }
+  
+  .ExpandLeaf .Expand {
+    cursor: auto;
+    /* листовой узел */
+  }

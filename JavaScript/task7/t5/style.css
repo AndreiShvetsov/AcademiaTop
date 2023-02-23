@@ -1,0 +1,15 @@
+body {
+    margin: auto;
+  }  
+
+  .menu {
+    width: 550px;
+    margin: auto;
+  }
+  .lis {
+    background-color: aqua;
+  }
+  
+  .lisactive {
+    background-color: red;
+  }

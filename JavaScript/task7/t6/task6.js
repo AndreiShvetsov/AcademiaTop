@@ -1,4 +1,3 @@
-// Task 6
 let tooltipElem;
 
 document.onmouseover = function(event) {

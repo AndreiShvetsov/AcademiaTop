@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./style.css" />
+    <script src="./task1.js"></script>
+    <title>Task1</title>
+  </head>
+
+  <body>
+    <a href="../indexTask.html">На главную</a>
+    <h2>Задание 1</h2>
+    <div class="task1">
+      <div>
+        <p>
+          Создать html-страницу для ввода имени пользователя. Необходимо
+          проверять каждый символ, который вводит пользователь. Если он ввел
+          цифру, то не отображать ее в input.
+        </p>
+      </div>
+      <input
+        placeholder="Введите имя пользователя"
+        type="text"
+        id="textName"
+        pattern="[^0-9]{1,20}"
+        onkeypress="noDigits(event)"
+      />
+    </div>
+    <div class="task1">
+      <p>
+        function noDigits(event) { <br />
+        if ("1234567890".indexOf(event.key) != -1) <br />
+        event.preventDefault(); <br />
+        }
+      </p>
+    </div>
+  </body>
+</html>

@@ -1,0 +1,18 @@
+body {
+    margin: auto;
+  }
+  .windo {
+    border: 3px solid green;
+    width: 500px;
+    height: 150px;
+    display: flex;
+    position: absolute;
+    z-index: 1000;
+  }
+  
+  #res {
+    border: 8px solid transparent;
+    border-bottom: 20px solid green;
+    position: relative;
+    z-index: 1000;
+  }
