@@ -1,0 +1,75 @@
+body {
+  margin: auto;
+}
+
+/* Для 1 задания */
+.task1 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.fon {
+  width: 200px;
+  height: 50px;
+  background-color: bisque;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.line {
+  width: 150px;
+  height: 20px;
+  background-color: gray;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+#eventQub {
+  width: 25px;
+  height: 25px;
+  background-color: aquamarine;
+  position: relative;
+  right: 0px;
+}
+
+/* Для 2 задания */
+.task2 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.fon2 {
+  width: 500px;
+  height: 300px;
+  background-color: bisque;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+#leftStrel,
+#rightStrel {
+  background-color: yellowgreen;
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+}
+#pichers {
+  width: 400px;
+  height: 250px;
+  background-color: rgb(67, 192, 214);
+}
+img {
+  width: 400px;
+  height: 250px;
+}
+
+/* Для 3 задания */
+.bloc {
+  border: solid 1px;
+}
+.stels {
+    display: none;
+}
+
