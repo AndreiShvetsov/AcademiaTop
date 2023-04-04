@@ -1,16 +1,20 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 
-import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
+import { InfoBookComponent } from './info-book/info-book.component';
+import { InfoAutorComponent } from './info-autor/info-autor.component';
+import { FeedbackComponent } from './feedback/feedback.component';
 
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
+    InfoBookComponent,
+    InfoAutorComponent,
+    FeedbackComponent
   ],
   imports: [
-    BrowserModule,
-    AppRoutingModule
+    BrowserModule
   ],
   providers: [],
   bootstrap: [AppComponent]

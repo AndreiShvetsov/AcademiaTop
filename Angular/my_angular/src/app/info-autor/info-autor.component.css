@@ -1,0 +1,10 @@
+div {
+    width: 100vw;
+    margin: auto;
+    display: block;
+    justify-content: center;
+    text-align: center;
+  }
+  img {
+      width: 30vw;
+  }

@@ -1,0 +1,10 @@
+div {
+    width: 30vw;
+    margin: auto;
+    display: block;
+    justify-content: center;
+    text-align: center;
+  }
+  li {
+    text-align: start;
+  }
