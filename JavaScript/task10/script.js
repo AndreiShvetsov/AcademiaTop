@@ -8,7 +8,6 @@ async function submit() {
   let responseHour = await fetch(queryHour);
   if (response.ok) {
     let jsons = await response.json();
-    // let result = JSON.parse(response);
     console.log(jsons);
     console.log("Город " + jsons.name);
     console.log("Температура " + jsons.main.temp + "С");
@@ -21,7 +20,6 @@ async function submit() {
     console.log(weat);
     let dats = new Date(jsons.dt * 1000);
     console.log(dats);
-    // console.log(result);
     document.querySelector("#Result").innerHTML = `
     <div>
     <figure>

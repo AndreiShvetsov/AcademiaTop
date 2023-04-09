@@ -1,0 +1,19 @@
+header {
+  background-color: cornflowerblue;
+  height: 10vh;
+  text-align: center;
+  color: azure;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  margin-top: 0;
+}
+.NameProj {
+  display: inline-block;
+}
+main ul {
+  display: flex;
+  list-style-type: none;
+  justify-content: center;
+}
+li {
+  padding-left: 10px;
+}

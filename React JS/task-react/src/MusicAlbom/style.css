@@ -1,0 +1,12 @@
+.MusicAlbom {
+    display: block;
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+    color: darkslateblue;
+}
+img {
+    width: 40vw;
+}
+.audio {
+    margin-top: 1vh;
+}

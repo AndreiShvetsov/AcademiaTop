@@ -1,0 +1,15 @@
+footer {
+  background-color: cornflowerblue;
+  display: flex;
+  height: 10vh;
+  text-align: center;
+  color: azure;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  position: absolute;
+	left: 0;
+	bottom: 0;
+	width: 100%;
+}
+.textFooter {
+  margin: auto;
+}
