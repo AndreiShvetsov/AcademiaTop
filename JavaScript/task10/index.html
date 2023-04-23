@@ -9,14 +9,18 @@
     <title>JSON Ajax</title>
   </head>
   <body>
-    <a onclick="javascript:history.back(); return false;"
+    <!-- <a onclick="javascript:history.back(); return false;"
       >Вернуться в главное меню</a
-    >
+    > -->
     <div class="cityBlock">
-      <p class="cbityBlock_text">Введите название города на английском языке</p>
-        <input type="text" placeholder="Moscow" name="city" id="city" />
-        <button type="button" onclick="submit()">Узнать погоду</button>
+      <p class="cbityBlock_text">Введите название города</p>
+      <input type="text" placeholder="Moscow" name="city" id="city" />
+      <button type="button" onclick="submit()">Узнать погоду</button>
     </div>
-    <div id="Result"></div>
+    <div id="Info">
+      <div id="Result"></div>
+      <div id="HourText"></div>
+      <div id="ResultHour"></div>
+    </div>
   </body>
 </html>

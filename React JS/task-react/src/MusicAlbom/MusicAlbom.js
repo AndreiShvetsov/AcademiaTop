@@ -8,10 +8,7 @@ function MusicAlbom(props) {
       <p>Композитор - {props.compositor}</p>
       <p>Студия исполнитель - {props.studio}</p>
       <p>Дата выпуска - {props.relis}</p>
-      <img src={props.img} alt="Кей-Он" />
-      <div className="audio">
-        <audio controls src={props.music}></audio>
-      </div>
+      <img src={props.img} className="imgAlbom" alt="Кей-Он" />
     </div>
   );
 }

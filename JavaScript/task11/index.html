@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Test Form</title>
+  </head>
+  <body>
+    <!-- <a onclick="javascript:history.back(); return false;"
+      >Вернуться в главное меню</a
+    > -->
+
+    <div id="Form">
+      <p>Добавить новый цвет</p>
+      <div id="FormInput">
+        <div>
+          <label for="NameColor">Цвет</label>
+          <input
+            required
+            type="text"
+            name="NameColor"
+            placeholder="Напишите название цвета"
+            id="NameColor"
+          />
+        </div>
+        <div>
+          <label for="typeColor">Тип</label>
+
+          <select name="typeColor" id="typeColor" onchange=codeInput() >
+            <option value="RGB">RGB</option>
+            <option value="RGBA">RGBA</option>
+            <option value="HEX">HEX</option>
+          </select>
+        </div>
+        
+        <div id="Code">
+          <label for="Code">Код</label>
+          <!-- <input
+            type="text"
+            name="Code"
+            id="Code"
+            placeholder="Напишите код цвета"
+          /> -->
+        </div>
+        <div>
+          <button id="butSave" type="submit" onclick="butSave()">
+            Сохранить
+          </button>
+        </div>
+      </div>
+    </div>
+
+    <div id="blocColor">
+      <p>Все цвета</p>
+      <div id="StartColor">
+      </div>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>

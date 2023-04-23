@@ -1,0 +1,48 @@
+body {
+  display: grid;
+  grid-template-areas:
+    "Form"
+    "blocColor";
+  grid-template-rows: auto auto;
+  grid-template-columns: 1fr;
+  text-align: center;
+  background-color: bisque;
+  
+}
+#Form {
+  grid-area: Form;
+}
+#FormInput {
+  display: block;
+  width: 200px;
+  text-align: left;
+  margin: auto;
+  padding: 0;
+}
+#FormInput > div {
+  display: block;
+  padding-top: 10px;
+  margin: auto;
+}
+#FormInput button {
+  width: 88%;
+  margin: auto;
+}
+
+#blocColor {
+    width: 100vw;
+    display: block;
+}
+
+#blocColor>div {
+  grid-area: blocColor;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+.color {
+  width: 200px;
+  height: 140px;
+  margin-left: 20px;
+  margin-top: 10px;
+}

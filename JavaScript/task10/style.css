@@ -1,0 +1,35 @@
+body {
+  display: grid;
+  grid-template-areas:
+    "cityBlock"
+    "Info";
+  grid-template-rows: 1fr 1fr;
+  grid-template-columns: 1fr;
+}
+#cityBlock {
+  grid-area: cityBlock;
+  text-align: center;
+}
+#Info {
+  grid-area: Info;
+  height: 10vh;
+}
+#Result > div {
+  border: 3px;
+  border-style: solid;
+  text-align: center;
+}
+
+#ResultHour {
+  text-align: center;
+  border: 3px;
+  border-style: solid;
+  display: flex;
+}
+#ResultHour > div {
+  margin: auto;
+}
+
+.HourText {
+  text-align: center;
+}
