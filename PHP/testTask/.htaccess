@@ -1,0 +1,19 @@
+<IfModule dir_module>
+    DirectoryIndex index.php index.html
+    RewriteCond %{REQUEST_FILENAME} !favicon.ico
+</IfModule>
+AddDefaultCharset UTF-8
+AddCharset UTF-8 .html
+<FilesMatch "\.(html)$">
+   Header set Cache-Control: "no-cache, no-store"
+   Header unset ETag
+</FilesMatch>
+Header set X-Content-Type-Options nosniff
+<files .htpasswd>
+    order allow,deny
+    deny from all
+    </files>
+    <Files .htaccess>
+        order allow,deny
+        deny from all
+        </Files>
